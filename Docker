@@ -1,0 +1,12 @@
+#for_mysql
+FROM mysql:5.7
+
+MAINTAINER nastia2312@ukr.net
+RUN apt-get update
+
+ENV MYSQL_ROOT_PASSWORD="nastia2312"
+ENV MYSQL_DATABASE=senysh
+ENV MYSQL_USER=anastasia
+ENV MYSQL_DATABASE_PASSWORD="password"
+
+EXPOSE 3306
