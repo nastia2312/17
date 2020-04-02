@@ -1,0 +1,9 @@
+#for_centos
+
+FROM centos:latest
+
+LABEL maintainer="nastia2312@ukr.net"
+EXPOSE 8081
+RUN yum -y update
+CMD yum install -y apache2
+CMD tail -f dev/null
